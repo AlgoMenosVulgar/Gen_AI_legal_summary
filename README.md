@@ -1,7 +1,7 @@
 # Legal Sentences Filtering Pipeline (Faiss & Fuzzy)
 
 ## Overview
-Two complementary notebooks for filtering and augmenting legal sentence data:
+Two complementary notebooks for filtering and enriching legal sentence data via **parallelized API calls** using **ThreadPoolExecutor**. The design minimizes latency, token usage, and rate limits and saves time and cost in production. Originally developed in https://github.com/AlgoMenosVulgar/Hybrid-Recommender-With-Parallelized-LLMs.
 
 - **Fuzzy**: Lightweight, regex-based topic filtering on textual columns (e.g., “Tema - subtema”, “resuelve”, “sintesis”) that displays a word cloud for quick understanding and summarizes sentences and details via parallelized API calls. Call intervals and token usage are optimized to avoid hitting rate or token limits, which is critical if the service is paid.
 **Attached can be found a monolitic version of this code as an alternative in .py ready to go, very compact to get familiar with the process.**
