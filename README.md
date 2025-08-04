@@ -2,8 +2,10 @@
 
 ## Overview
 Two complementary notebooks for filtering and augmenting legal sentence data:
-- **Fuzzy**: lightweight, regex-based topic filtering on textual columns (e.g., "Tema - subtema", "resuelve", "sintesis").
-- **Faiss**: builds on filtered data with additional processing/augmentation (e.g., LLM enrichment, word clouds, and downstream analysis).
+
+- **Fuzzy**: Lightweight, regex-based topic filtering on textual columns (e.g., “Tema - subtema”, “resuelve”, “sintesis”) that displays a word cloud for quick understanding and summarizes sentences and details via parallelized API calls. Call intervals and token usage are optimized to avoid hitting rate or token limits, which is critical if the service is paid.
+  
+- **Faiss**: vector index search instead of the old fuzzy.
 
 Both expect an input Excel of past legal sentences and output filtered subsets for further review or LLM processing.
 
