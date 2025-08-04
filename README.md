@@ -4,6 +4,7 @@
 Two complementary notebooks for filtering and augmenting legal sentence data:
 
 - **Fuzzy**: Lightweight, regex-based topic filtering on textual columns (e.g., “Tema - subtema”, “resuelve”, “sintesis”) that displays a word cloud for quick understanding and summarizes sentences and details via parallelized API calls. Call intervals and token usage are optimized to avoid hitting rate or token limits, which is critical if the service is paid.
+**Attached can be found a monolitic version of this code as an alternative in .py ready to go, very compact to get familiar with the process.**
   
 - **Faiss**: vector index search instead of the old fuzzy.
 
@@ -17,7 +18,11 @@ Install the dependencies (see `requirements.txt`), e.g.:
 pip install -r requirements.txt
 ```
 
-or inside the jupyter notebook cell via: !pip install -r requirements.txt
+or inside the jupyter notebook cell via:
+```
+!pip install -r requirements.txt
+```
+**Once this is installed, the fastest way to get a result is to run "monolitic_LLM_generator.py".**
 
 Minimal required packages include:
 - pandas
