@@ -103,12 +103,12 @@ print(f"Retained: {len_PIAR}")
   filtered_acoso_escolar_con_LLMs.to_csv("filtered_acoso_escolar_con_LLMs.csv", encoding="utf-8-sig")
   ```
 
-## Running
+## Word Cloud
 
-Interactively:
-```sh
-jupyter lab
-```
+![Word cloud of key terms](Datos/word_cloud.PGN)
+
+*Figure: Word cloud summarizing the most frequent and semantically related terms, providing a quick topical overview.*
+
 
 ## Tips
 
