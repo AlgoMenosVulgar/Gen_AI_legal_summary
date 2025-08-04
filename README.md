@@ -108,17 +108,15 @@ Interactively:
 jupyter lab
 ```
 
-
 ## Tips
 
 - The regex filter lowercases and strips accents; normalize topics accordingly.
-- Extend with embedding+FAISS later if semantic similarity is needed.
 - Validate presence of environment variables before use.
 
 ## Example Workflow Summary
 
 1. Populate `.env` with required API keys.
 2. Ensure `sentencias_pasadas.xlsx` is present.
-3. Run `Consultoría 2_Fuzzy.ipynb` to get base filtered data.
-4. Feed into `Consultoría 2_Faiss.ipynb` for augmentation and analysis.
+3. Run `Consultoría 2_Fuzzy.ipynb` to get base filtered data aumented via LLM.
+4. Use `Consultoría 2_Faiss.ipynb` for a modern vector index search alternative.
 5. Export final results.
