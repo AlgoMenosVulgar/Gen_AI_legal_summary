@@ -105,7 +105,7 @@ print(f"Retained: {len_PIAR}")
 
 ## Word Cloud
 
-![Word cloud of key terms](Datos/word_cloud.PGN)
+![Word cloud of key terms](Datos/word_cloud.PNG)
 
 *Figure: Word cloud summarizing the most frequent and semantically related terms, providing a quick topical overview.*
 
